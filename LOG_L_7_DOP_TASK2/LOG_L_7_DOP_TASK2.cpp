@@ -57,17 +57,17 @@ int main(void) {
 	initialize_graph(size, graph, edge_probability);
 
 	printf("Матрица смежности: \n\n");
-	print_graph(size, graph);
+	//print_graph(size, graph);
 
 	printf("\nСписок смежности: \n\n");
 	Node** adj_list = conv_to_adj_list(size, graph);
-	print_adj_list(size, adj_list);
+	//print_adj_list(size, adj_list);
 
 	printf("\nРекурсивный порядок обхода вершин в глубину матрицы смежности:   ");
-	matrix_depth_search(size, graph);
+	//matrix_depth_search(size, graph);
 
 	printf("\nРекурсивный порядок обхода вершин в глубину списка смежности:    ");
-	adj_list_depth_search(adj_list, size);
+	//adj_list_depth_search(adj_list, size);
 
 	printf("\nНерекурсивный порядок обхода вершин в глубину матрицы смежности: ");
 	stack_matrix_depth_search(size, graph);
